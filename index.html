@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>StackCalc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='./index.js' defer></script>
+    <style>
+      html, body {
+        margin: 0;
+      }
+
+      .outer {
+        display: table;
+        margin: auto;
+        margin-top: 5px;
+      }
+
+      .container {
+        width: 400px;
+        height: 400px;
+        border: solid 1px #ddd;
+        padding: 5px;
+        background-color: #eee;
+      }
+
+      .container ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container li {
+        margin-bottom: 5px;
+        border-bottom: solid 1px;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, #000, #0000);
+        list-style-type: none;
+      }
+
+      .container li.broken {
+        color: #b00;
+      }
+
+      input {
+        margin-top: 5px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='outer'>
+      <div class='container'></div>
+      <input></input>
+    </div>
+  </body>
+</html>
